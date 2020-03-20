@@ -1,0 +1,6 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{2290:function(r,t){
+/*!
+ * array-to-sentence | MIT (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/array-to-sentence
+*/
+r.exports=function(r,t){"use strict";if(!Array.isArray(r))throw new TypeError(String(r)+" is not an array. Expected an array.");function a(r){if("string"!=typeof t[r])throw new TypeError(String(t[r])+" is not a string. `"+r+"` option must be a string.")}return void 0===(t=t||{}).separator?t.separator=", ":a("separator"),void 0===t.lastSeparator?t.lastSeparator=" and ":a("lastSeparator"),0===r.length?"":1===r.length?r[0]:r.slice(0,-1).join(t.separator)+t.lastSeparator+r[r.length-1]}}}]);
